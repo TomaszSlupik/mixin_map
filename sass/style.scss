@@ -1,0 +1,136 @@
+body {
+	margin: 10px;
+	padding: 30px;
+	background-color: rgb(107, 102, 102);
+}
+
+$first-width: 200px;
+$second-height: 300px;
+$third-background-color: tomato;
+$four-background-color: gold;
+$five-background-color: lime;
+$six-background-color: blue;
+
+$colors: (
+	one: rgb(0, 255, 170),
+	two: rgb(10, 9, 9),
+	three: rgba(255, 255, 255, 0.911),
+	four: rgb(156, 45, 45),
+);
+
+@mixin addons1 {
+	background-color: coral;
+}
+
+@mixin addons2 {
+	background-color: darkmagenta;
+}
+
+@mixin addons3 {
+	background-color: hotpink;
+}
+
+@mixin addons4 {
+	background-color: khaki;
+}
+
+@mixin color($bg-color) {
+	background-color: $bg-color;
+}
+
+.square {
+	width: $first-width;
+	height: $second-height;
+	position: absolute;
+	box-shadow: 0 0 20px 10px black;
+	border-radius: 25px;
+}
+
+.squaretwo {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	margin-top: 25%;
+	box-shadow: 0 0 20px 10px black;
+	border-radius: 25px;
+}
+
+.square1 {
+	display: inline-block;
+	background-color: $third-background-color;
+}
+
+.square2 {
+	margin: 0 16%;
+	background-color: $four-background-color;
+}
+
+.square3 {
+	margin: 0 32%;
+	background-color: $five-background-color;
+}
+
+.square4 {
+	margin: 0 48%;
+	background-color: $six-background-color;
+}
+
+.square5 {
+	display: inline-block;
+	background-color: map-get($colors, one);
+}
+
+.square6 {
+	margin: 25% 16%;
+	background-color: map-get($colors, two);
+}
+
+.square7 {
+	margin: 25% 32%;
+	background-color: map-get($colors, three);
+}
+
+.square8 {
+	margin: 25% 48%;
+	background-color: map-get($colors, four);
+}
+
+.square9 {
+	margin: 42% 0%;
+	@include addons1;
+}
+
+.square10 {
+	margin: 42% 16%;
+	@include addons2;
+}
+
+.square11 {
+	margin: 42% 32%;
+	@include addons3;
+}
+
+.square12 {
+	margin: 42% 48%;
+	@include addons4;
+}
+
+.square13 {
+	margin: 59% 0%;
+	@include color(#ff00ea);
+}
+
+.square14 {
+	margin: 59% 16%;
+	@include color(red);
+}
+
+.square15 {
+	margin: 59% 32%;
+	@include color(rgb(0, 238, 255));
+}
+
+.square16 {
+	margin: 59% 48%;
+	@include color(rgba(0, 0, 255, 0.411));
+}

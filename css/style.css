@@ -1,0 +1,105 @@
+body {
+  margin: 10px;
+  padding: 30px;
+  background-color: #6b6666;
+}
+
+.square {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 20px 10px black;
+          box-shadow: 0 0 20px 10px black;
+  border-radius: 25px;
+}
+
+.squaretwo {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin-top: 25%;
+  -webkit-box-shadow: 0 0 20px 10px black;
+          box-shadow: 0 0 20px 10px black;
+  border-radius: 25px;
+}
+
+.square1 {
+  display: inline-block;
+  background-color: tomato;
+}
+
+.square2 {
+  margin: 0 16%;
+  background-color: gold;
+}
+
+.square3 {
+  margin: 0 32%;
+  background-color: lime;
+}
+
+.square4 {
+  margin: 0 48%;
+  background-color: blue;
+}
+
+.square5 {
+  display: inline-block;
+  background-color: #00ffaa;
+}
+
+.square6 {
+  margin: 25% 16%;
+  background-color: #0a0909;
+}
+
+.square7 {
+  margin: 25% 32%;
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+.square8 {
+  margin: 25% 48%;
+  background-color: #9c2d2d;
+}
+
+.square9 {
+  margin: 42% 0%;
+  background-color: coral;
+}
+
+.square10 {
+  margin: 42% 16%;
+  background-color: darkmagenta;
+}
+
+.square11 {
+  margin: 42% 32%;
+  background-color: hotpink;
+}
+
+.square12 {
+  margin: 42% 48%;
+  background-color: khaki;
+}
+
+.square13 {
+  margin: 59% 0%;
+  background-color: #ff00ea;
+}
+
+.square14 {
+  margin: 59% 16%;
+  background-color: red;
+}
+
+.square15 {
+  margin: 59% 32%;
+  background-color: #00eeff;
+}
+
+.square16 {
+  margin: 59% 48%;
+  background-color: rgba(0, 0, 255, 0.411);
+}
+/*# sourceMappingURL=style.css.map */
